@@ -1,0 +1,23 @@
+{
+  "name": "sept23-advanced-testing-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prestart": "node scripts/create-database.js",
+    "start": "nodemon index.js",
+    "lint": "eslint .",
+    "test:unit": "mocha tests/unit/**/*.js"
+  },
+  "dependencies": {
+    "chai": "^4.3.7",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "pg": "^8.10.0",
+    "sinon": "^17.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "eslint": "^8.36.0",
+    "nodemon": "^2.0.21"
+  }
+}
